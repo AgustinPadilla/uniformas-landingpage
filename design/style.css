@@ -1,0 +1,17 @@
+
+header{
+  display: absolute;
+  width: 100%;
+}
+
+.navbar{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar img {
+  max-width: 60px;
+}
