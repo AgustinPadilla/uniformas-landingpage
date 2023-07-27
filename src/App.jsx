@@ -10,7 +10,6 @@ function App () {
         <nav className='flex justify-center items-center h-full'>
           <NavItem>Compra ya!</NavItem>
           <NavItem>Sobre nosotros</NavItem>
-          {/* <img src='logoUF.svg' alt='UniFormas Logo' className='h-20 mx-3' /> */}
           <Logo w={70} h={40} />
           <NavItem>Contactanos</NavItem>
           <NavItem>Dona tu ropa</NavItem>
