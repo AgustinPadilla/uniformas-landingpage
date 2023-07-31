@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .ColoredSection{
+    @apply min-w-full p-12 flex justify-center gap-10 snap-center min-h-[800px] shadow-inner;
+  }
+}
