@@ -2,7 +2,7 @@ import React from 'react'
 
 export const ProductCard = ({ img, title, fabric, sizes, custom }) => {
   return (
-    <article className='flex flex-col gap-2 justify-center items-center w-fit p-3 border border-black rounded-md shadow-lg'>
+    <article className='flex flex-col gap-2 justify-center items-center w-fit p-3 border border-black rounded-md shadow-lg hover:transform hover:scale-105 hover:shadow-xl transition-all'>
       <picture>
         <img src={img} alt={title} className='w-96 h-96 rounded-md border border-black' />
       </picture>
