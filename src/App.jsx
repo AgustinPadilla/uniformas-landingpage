@@ -5,13 +5,13 @@ import { EcoFriendlySection } from './components/EcoFriendlySection'
 import { ProductsListSection } from './components/ProductsListSection'
 import { Footer } from './components/Footer'
 import { useRef } from 'react'
-
 function App () {
   const productList = useRef(null)
+
   return (
-    <div className='min-h-screen m-0'>
+    <div className='min-h-screen m-0 scroll-smooth'>
       <Header productsList={productList} />
-      <main className='snap-y snap-proximity overflow-auto h-screen pt-16'>
+      <main className='snap-y snap-mandatory overflow-auto pt-16 h-screen'>
         <LogoSection />
 
         <ProductPresentationSection />
