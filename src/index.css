@@ -4,6 +4,6 @@
 
 @layer components {
   .ColoredSection{
-    @apply min-w-full p-12 flex justify-center gap-10 snap-center min-h-[750px] shadow-inner ;
+    @apply min-w-full p-24 flex justify-center gap-10 snap-center min-h-[750px] shadow-inner ;
   }
 }
