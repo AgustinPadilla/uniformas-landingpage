@@ -1,5 +1,5 @@
 import React from 'react'
-import { Logo } from './logo'
+import { Logo } from './Logo'
 import { Title } from './Title'
 import { Fade } from 'react-awesome-reveal'
 export const LogoSection = () => {
