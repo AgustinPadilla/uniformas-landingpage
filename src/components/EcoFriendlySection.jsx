@@ -9,11 +9,11 @@ export const EcoFriendlySection = () => {
       <article className='flex flex-col max-w-2xl'>
         <Title>Lo mejor para vos y para el planeta!</Title>
         <Fade direction='left' duration={500}>
-          <h2 className='text-2xl font-extrabold text-green-950 drop-shadow-lg mt-4 mb-10'>
+          <h2 className='text-xl font-extrabold text-green-950 drop-shadow-lg mt-4 mb-10'>
             Prendas confeccionadas con materiales amigables con el medio ambiente
           </h2>
         </Fade>
-        <div className='text-xl font-medium drop-shadow-lg flex flex-col justify-between items-center max-w-xl gap-5'>
+        <div className='text-xs font-medium drop-shadow-lg flex flex-col justify-between items-center max-w-xl gap-5'>
           <Fade direction='left'>
             <p>Enfocamos la produccion para ofrecer la mejor calidad y durabilidad sin dejar de lado ser ecologicos!</p>
           </Fade>
@@ -40,7 +40,7 @@ export const EcoFriendlySection = () => {
         </div>
       </article>
 
-      <picture className='w-96 flex flex-col justify-center items-center'>
+      <picture className='hidden w-96 md:flex flex-col justify-center items-center'>
         <img src='Eco.svg' />
         <div className='flex items-end gap-8' />
       </picture>

@@ -9,10 +9,10 @@ export const ProductPresentationSection = () => {
       <article className='flex flex-col max-w-2xl'>
         <Title>Uniformes de calidad !</Title>
         <Fade direction='left' duration={500}>
-          <h2 className='text-3xl font-extrabold text-sky-950 drop-shadow-lg mb-10 mt-4'>Para escuelas, colegios y liceos</h2>
+          <h2 className='text-xl md:text-3xl font-extrabold text-sky-950 drop-shadow-lg mb-10 mt-4'>Para escuelas, colegios y liceos</h2>
         </Fade>
 
-        <div className='text-xl font-medium drop-shadow-lg flex flex-col items-center max-w-xl gap-5'>
+        <div className='text-xs md:text-xl font-medium drop-shadow-lg flex flex-col items-center max-w-xl gap-5'>
 
           <Fade direction='left' duration={500}>
             <p>Ofrecemos indumentaria del mejor nivel en una amplia variedad de estilos para niños y niñas. ¡Encuentra el estilo perfecto para tus hijos!</p>
@@ -31,7 +31,7 @@ export const ProductPresentationSection = () => {
 
       </article>
 
-      <picture className='w-96 flex flex-col'>
+      <picture className='hidden w-96 md:flex flex-col'>
         <div className='flex flex-grow hover:animate-shake hover:animate-once hover:animate-duration-200 hover:animate-ease-in-out'>
           <img src='mona.png' alt='moña' className='drop-shadow-2xl h-fit w-44 m-0 -rotate-12 mona' />
         </div>

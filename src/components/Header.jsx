@@ -1,17 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Logo } from './Logo'
-import { NavItem } from './NavItem'
+import { NavItemsList } from './NavItemsList'
 
 export const Header = ({ productsList }) => {
+  const [openNavbar, setOpenNavbar] = useState(false)
+
+  const toggleNavbar = () => {
+    setOpenNavbar(!openNavbar)
+  }
   return (
-    <header className='text-xl z-10 fixed top-0 w-full bg-white h-16 shadow-md'>
-      <nav className='flex justify-center gap-2 items-center h-full'>
-        <NavItem section={productsList}>Compra ya!</NavItem>
-        <NavItem>Sobre nosotros</NavItem>
+    <header className='text-xl z-10 md:fixed top-0 w-full bg-white h-16 shadow-md'>
+      <nav className='flex justify-between px-8 gap-2 items-center h-full '>
         <Logo w={40} h={40} />
-        <NavItem>Contactanos</NavItem>
-        <NavItem>Dona tu ropa</NavItem>
+        <div className='hidden md:block'>
+          <NavItemsList />
+        </div>
+        <div className='block md:hidden'>
+          <button onClick={toggleNavbar}>{openNavbar ? <img src='x.svg' className='w-10' /> : <img src='menu.svg' className='w-10' />}</button>
+        </div>
+
       </nav>
+
+      {openNavbar && (
+        <div className='bg-white flex flex-col items-center'>
+          <NavItemsList />
+        </div>
+      )}
     </header>
   )
 }

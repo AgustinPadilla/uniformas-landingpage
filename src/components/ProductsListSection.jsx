@@ -5,7 +5,7 @@ import { Zoom } from 'react-awesome-reveal'
 
 export const ProductsListSection = forwardRef(function ProductsListSection (props, ref) {
   return (
-    <section className='ColoredSection bg-amber-300 flex-col items-center justify-start' ref={ref}>
+    <section id='ProductListSection' className='ColoredSection bg-amber-300 flex-col items-center justify-start' ref={ref}>
       <Title>Revisa nuestros productos</Title>
 
       <section className='w-4/5 flex justify-around'>

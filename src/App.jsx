@@ -11,7 +11,7 @@ function App () {
   return (
     <div className='min-h-screen m-0 scroll-smooth'>
       <Header productsList={productList} />
-      <main className='snap-y snap-mandatory overflow-auto pt-16 h-screen'>
+      <main className='snap-y snap-mandatory overflow-auto md:pt-16 h-screen'>
         <LogoSection />
 
         <ProductPresentationSection />
