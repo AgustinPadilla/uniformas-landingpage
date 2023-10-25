@@ -3,7 +3,7 @@ import React from 'react'
 export const Footer = () => {
   return (
     <footer className='min-w-full px-12 pt-12 flex flex-col justify-center snap-center max-h-fit shadow-inner bg-stone-900 text-white'>
-      <section className='flex justify-around gap-10'>
+      <section className='flex flex-col md:flex-row justify-around gap-10'>
         <article>
           <h2 className=' font-extrabold drop-shadow-2xl text-2xl'>Nuestra empresa</h2>
           <ul className='p-2'>

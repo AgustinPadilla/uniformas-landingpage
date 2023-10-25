@@ -18,10 +18,10 @@ export const ProductPresentationSection = () => {
             <p>Ofrecemos indumentaria del mejor nivel en una amplia variedad de estilos para niños y niñas. ¡Encuentra el estilo perfecto para tus hijos!</p>
           </Fade>
           <Fade delay={200} direction='left' cascade duration={500} damping={0.5}>
-            <ul className='mt-10 w-full ml-52'>
-              <li className='mb-5 flex items-center'> <img src='nursery.svg' className='h-8 mr-4' />Jardineros personalizados</li>
-              <li className='mb-5 flex items-center'><img src='school.svg' className='h-8 mr-4' />Tunicas escolares</li>
-              <li className='mb-5 flex items-center'><img src='college.svg' className='h-8 mr-4' />Conjuntos de colegios y liceo</li>
+            <ul className='w-5/6 mt-10 md:ml-52'>
+              <li className='w-fit mb-5 flex items-center'> <img src='nursery.svg' className='h-8 mr-4' />Jardineros personalizados</li>
+              <li className='w-fit mb-5 flex items-center'><img src='school.svg' className='h-8 mr-4' />Tunicas escolares</li>
+              <li className='w-fit mb-5 flex items-center'><img src='college.svg' className='h-8 mr-4' />Conjuntos de colegios y liceo</li>
             </ul>
           </Fade>
           <Zoom duration={500}>
