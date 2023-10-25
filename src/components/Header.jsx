@@ -22,7 +22,7 @@ export const Header = ({ productsList }) => {
       </nav>
 
       {openNavbar && (
-        <div className='bg-white flex flex-col items-center'>
+        <div className='w-full right-0 fixed bg-white flex flex-col items-center shadow-lg transition-all'>
           <NavItemsList />
         </div>
       )}
