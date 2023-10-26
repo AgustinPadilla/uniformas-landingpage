@@ -4,7 +4,7 @@ export const ProductCard = ({ img, title, fabric, sizes, custom }) => {
   return (
     <article className='flex flex-col gap-2 justify-center items-center w-fit p-3 border border-black rounded-md shadow-lg hover:transform hover:scale-105 hover:shadow-xl transition-all'>
       <picture>
-        <img src={img} alt={title} className='w-96 h-96 rounded-md border border-black' />
+        <img src={img} alt={title} className='w-96 h-80 rounded-md border border-black' />
       </picture>
       <h1 className='text-white font-extrabold drop-shadow-2xl text-2xl'>{title}</h1>
       <div className='text-md font-medium drop-shadow-lg '>
