@@ -4,7 +4,7 @@ import { Fade, Zoom } from 'react-awesome-reveal'
 
 export const ProductPresentationSection = () => {
   return (
-    <section className='ColoredSection bg-sky-300 relative'>
+    <section className='ColoredSection bg-sky-300 relative md:static'>
 
       <article className='flex flex-col max-w-2xl'>
         <Title>Uniformes de calidad !</Title>
@@ -31,16 +31,20 @@ export const ProductPresentationSection = () => {
 
       </article>
 
-      <picture className='absolute w-11/12 h-96 opacity-10 md:opacity-100 md:static md:w-96 md:flex flex-col'>
+      <picture className='hidden w-96 md:flex flex-col'>
         <div className='flex flex-grow hover:animate-shake hover:animate-once hover:animate-duration-200 hover:animate-ease-in-out'>
-          <img src='mona.png' alt='moña' className='drop-shadow-2xl h-fit w-44 m-0 -rotate-12 mona' />
+          <img src='mona.svg' alt='moña' className='drop-shadow-2xl h-fit w-44 m-0 -rotate-12 mona' />
         </div>
         <div className='flex flex-grow hover:animate-shake hover:animate-once hover:animate-duration-200 hover:animate-ease-in-out justify-end'>
-          <img src='mona.png' alt='moña' className='drop-shadow-2xl h-fit w-44 rotate-12 mona' />
+          <img src='mona.svg' alt='moña' className='drop-shadow-2xl h-fit w-44 rotate-12 mona' />
         </div>
         <div className='flex flex-grow hover:animate-shake hover:animate-once hover:animate-duration-200 hover:animate-ease-in-out'>
-          <img src='mona.png' alt='moña' className='drop-shadow-2xl h-fit w-44 -rotate-12 mona' />
+          <img src='mona.svg' alt='moña' className='drop-shadow-2xl h-fit w-44 -rotate-12 mona' />
         </div>
+      </picture>
+
+      <picture className='absolute opacity-10 md:hidden'>
+        <img src='mona.svg' alt='moña' className='w-96' />
       </picture>
 
     </section>
