@@ -4,7 +4,7 @@ import { Fade, Zoom } from 'react-awesome-reveal'
 
 export const EcoFriendlySection = () => {
   return (
-    <section className='ColoredSection bg-green-300'>
+    <section className='ColoredSection bg-green-300 relative'>
 
       <article className='flex flex-col max-w-2xl'>
         <Title>Lo mejor para vos y para el planeta!</Title>
@@ -40,7 +40,7 @@ export const EcoFriendlySection = () => {
         </div>
       </article>
 
-      <picture className='hidden w-96 md:flex flex-col justify-center items-center'>
+      <picture className='absolute opacity-10 md:opacity-100 md:static w-96 md:flex flex-col justify-center items-center'>
         <img src='Eco.svg' />
         <div className='flex items-end gap-8' />
       </picture>

@@ -4,7 +4,7 @@ import { Fade, Zoom } from 'react-awesome-reveal'
 
 export const ProductPresentationSection = () => {
   return (
-    <section className='ColoredSection bg-sky-300'>
+    <section className='ColoredSection bg-sky-300 relative'>
 
       <article className='flex flex-col max-w-2xl'>
         <Title>Uniformes de calidad !</Title>
@@ -31,7 +31,7 @@ export const ProductPresentationSection = () => {
 
       </article>
 
-      <picture className='hidden w-96 md:flex flex-col'>
+      <picture className='absolute opacity-10 md:opacity-100 md:static w-96 md:flex flex-col'>
         <div className='flex flex-grow hover:animate-shake hover:animate-once hover:animate-duration-200 hover:animate-ease-in-out'>
           <img src='mona.png' alt='moña' className='drop-shadow-2xl h-fit w-44 m-0 -rotate-12 mona' />
         </div>
