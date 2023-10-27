@@ -31,7 +31,7 @@ export const ProductPresentationSection = () => {
 
       </article>
 
-      <picture className='absolute w-full h-full opacity-10 md:opacity-100 md:static md:w-96 md:flex flex-col'>
+      <picture className='absolute w-11/12 h-auto opacity-10 md:opacity-100 md:static md:w-96 md:flex flex-col'>
         <div className='flex flex-grow hover:animate-shake hover:animate-once hover:animate-duration-200 hover:animate-ease-in-out'>
           <img src='mona.png' alt='moña' className='drop-shadow-2xl h-fit w-44 m-0 -rotate-12 mona' />
         </div>
