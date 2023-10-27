@@ -18,7 +18,7 @@ function App () {
 
         <EcoFriendlySection />
 
-        <ProductsListSection ref={productList} />
+        <ProductsListSection />
 
         <Footer />
       </main>

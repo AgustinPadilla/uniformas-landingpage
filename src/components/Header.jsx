@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Logo } from './Logo'
 import { NavItemsList } from './NavItemsList'
 
-export const Header = ({ productsList }) => {
+export const Header = () => {
   const [openNavbar, setOpenNavbar] = useState(false)
 
   const toggleNavbar = () => {
