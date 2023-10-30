@@ -25,7 +25,7 @@ export const ProductPresentationSection = () => {
             </ul>
           </Fade>
           <Zoom duration={500}>
-            <button className='bg-sky-700 text-white py-2 px-7 shadow-xl hover:bg-sky-600 active:translate-y-1 active:bg-sky-800'>Comprar</button>
+            <a href='#ProductListSection' className='bg-sky-700 text-white py-2 px-7 shadow-xl hover:bg-sky-600 active:translate-y-1 active:bg-sky-800'>Comprar</a>
           </Zoom>
         </div>
 

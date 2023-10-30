@@ -34,7 +34,7 @@ export const EcoFriendlySection = () => {
             </Zoom>
           </div>
           <div className='flex gap-16 mt-9'>
-            <button className='bg-green-700 text-white py-2 px-7 shadow-xl hover:bg-green-600 active:translate-y-1 active:bg-green-800'>Comprar</button>
+            <a href='#ProductListSection' className='bg-green-700 text-white py-2 px-7 shadow-xl hover:bg-green-600 active:translate-y-1 active:bg-green-800'>Comprar</a>
             <button className='bg-green-700 text-white py-2 px-7 shadow-xl hover:bg-green-600 active:translate-y-1 active:bg-green-800'>Leer más</button>
           </div>
         </div>

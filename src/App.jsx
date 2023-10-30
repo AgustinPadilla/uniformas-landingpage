@@ -4,14 +4,21 @@ import { ProductPresentationSection } from './components/ProductPresentationSect
 import { EcoFriendlySection } from './components/EcoFriendlySection'
 import { ProductsListSection } from './components/ProductsListSection'
 import { Footer } from './components/Footer'
-import { useRef } from 'react'
+import { useContext, useRef } from 'react'
+import { ContactDialog } from './components/ContactDialog'
+import { ContactContext } from './context/Contact'
 function App () {
   const productList = useRef(null)
-
+  const { contactOpen } = useContext(ContactContext)
   return (
     <div className='min-h-screen m-0 scroll-smooth'>
       <Header productsList={productList} />
       <main className='md:snap-y md:snap-mandatory overflow-auto md:pt-16 h-screen'>
+
+        {contactOpen &&
+
+          <ContactDialog />}
+
         <LogoSection />
 
         <ProductPresentationSection />
