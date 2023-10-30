@@ -8,7 +8,7 @@ export const ContactDialog = () => {
   }
   return (
     <div className='fixed w-full h-full bg-gray-500 bg-opacity-60 z-30'>
-      <div className='fixed bg-white text-black flex flex-col items-center p-12 z-40 w-5/6 md:w-[750px] h-2/5 center m-auto top-0 bottom-0 left-0 right-0 shadow-md'>
+      <div className='fixed bg-white text-black flex flex-col items-center p-12 z-40 w-5/6 md:w-[750px] h-fit center m-auto top-0 bottom-0 left-0 right-0 shadow-md'>
         <button onClick={closeContact} className='absolute top-0 right-0 p-3'><img src='x.svg' className='w-10' /></button>
         <h1 className='z-10 text-4xl md:text-6xl text-black font-extrabold drop-shadow-lg mb-6'>Contactanos!</h1>
         <div className='text-2xl flex flex-col gap-5 mt-8 transition-all'>
