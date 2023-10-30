@@ -6,7 +6,7 @@ import { ProductsListSection } from './components/ProductsListSection'
 import { Footer } from './components/Footer'
 import { useContext, useRef } from 'react'
 import { ContactDialog } from './components/ContactDialog'
-import { ContactContext } from './context/Contact'
+import { ContactContext } from './context/contact'
 function App () {
   const productList = useRef(null)
   const { contactOpen } = useContext(ContactContext)

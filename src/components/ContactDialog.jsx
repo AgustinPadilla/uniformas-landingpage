@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { ContactContext } from '../context/Contact'
+import { ContactContext } from '../context/contact'
 
 export const ContactDialog = () => {
   const { setContactOpen } = useContext(ContactContext)

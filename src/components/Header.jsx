@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { Logo } from './Logo'
 import { NavItemsList } from './NavItemsList'
-import { ContactContext } from '../context/Contact'
+import { ContactContext } from '../context/contact'
 import { NavItem } from './NavItem'
 
 export const Header = () => {
