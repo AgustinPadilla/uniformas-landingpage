@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ContactContext } from '../context/contact'
 
 export const Footer = () => {
+  const { setContactOpen } = useContext(ContactContext)
+
+  const contactClick = () => {
+    setContactOpen(true)
+  }
   return (
     <footer className='min-w-full px-12 pt-12 flex flex-col justify-center snap-center max-h-fit shadow-inner bg-stone-900 text-white'>
       <section className='flex flex-col md:flex-row justify-around gap-10'>
@@ -10,7 +16,7 @@ export const Footer = () => {
             <li><a href=''>Sobre nosotros</a></li>
             <li><a href=''>Servicio de donación</a></li>
             <li><a href=''>Confeccion Uruguaya</a></li>
-            <li><a href=''>Contactanos</a></li>
+            <li><a onClick={contactClick} href='#'>Contactanos</a></li>
           </ul>
         </article>
         <article>

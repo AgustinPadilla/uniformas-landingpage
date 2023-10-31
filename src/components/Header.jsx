@@ -6,7 +6,7 @@ import { NavItem } from './NavItem'
 
 export const Header = () => {
   const [openNavbar, setOpenNavbar] = useState(false)
-  const { setContactOpen } = useContext(ContactContext)
+  const { contactOpen, setContactOpen } = useContext(ContactContext)
 
   const toggleNavbar = () => {
     setOpenNavbar(!openNavbar)
@@ -18,7 +18,7 @@ export const Header = () => {
   }
 
   const contact = () => {
-    setContactOpen(true)
+    setContactOpen(!contactOpen)
   }
   return (
     <header className='text-xl z-50 fixed top-0 w-full bg-white h-16 shadow-md'>

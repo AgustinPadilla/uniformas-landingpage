@@ -19,15 +19,15 @@ export const EcoFriendlySection = () => {
           </Fade>
           <div className='flex mt-10 gap-10'>
             <Zoom cascade duration={500}>
-              <picture className='text-center'>
+              <picture className='flex flex-col items-center gap-2 text-center'>
                 <img src='quality.svg' className='w-20' />
                 Calidad
               </picture>
-              <picture className='text-center'>
+              <picture className='flex flex-col items-center gap-2 text-center'>
                 <img src='durability.svg' className='w-20' />
                 Durabilidad
               </picture>
-              <picture className='text-center'>
+              <picture className='flex flex-col items-center gap-2 text-center'>
                 <img src='ecologic.svg' className='w-20' />
                 Ecologico
               </picture>

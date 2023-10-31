@@ -13,7 +13,7 @@ function App () {
   return (
     <div className='min-h-screen m-0 scroll-smooth'>
       <Header productsList={productList} />
-      <main className='md:snap-y md:snap-mandatory overflow-auto md:pt-16 h-screen'>
+      <main className='lg:snap-y lg:snap-mandatory overflow-auto md:pt-16 h-screen'>
 
         {contactOpen &&
 

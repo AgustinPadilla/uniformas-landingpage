@@ -8,7 +8,7 @@ export const ProductsListSection = () => {
     <section id='ProductListSection' className='h-fit ColoredSection bg-amber-300 flex-col items-center justify-start'>
       <Title>Revisa nuestros productos</Title>
 
-      <section className='hidden md:grid md:grid-cols-3 w-auto gap-8'>
+      <section className='hidden md:grid md:grid-cols-2 lg:grid-cols-3 w-auto gap-8'>
         <Zoom duration={500} cascade>
           <ProductCard img='jardinero.webp' title='Jardinero escolar' fabric='Zephyr' sizes='2 a 6' custom />
           <ProductCard img='tunica.jpg' title='Tunica blanca' fabric='Acrocel' sizes='6 a 14' custom />

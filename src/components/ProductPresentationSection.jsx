@@ -31,15 +31,15 @@ export const ProductPresentationSection = () => {
 
       </article>
 
-      <picture className='hidden w-96 md:flex flex-col'>
+      <picture className='hidden md:w-56 lg:w-96 md:flex flex-col'>
         <div className='flex flex-grow hover:animate-shake hover:animate-once hover:animate-duration-200 hover:animate-ease-in-out'>
-          <img src='mona.svg' alt='moña' className='drop-shadow-2xl h-fit w-44 m-0 -rotate-12 mona' />
+          <img src='mona.svg' alt='moña' className='drop-shadow-2xl h-fit w-22 lg:w-44 m-0 -rotate-12 mona' />
         </div>
         <div className='flex flex-grow hover:animate-shake hover:animate-once hover:animate-duration-200 hover:animate-ease-in-out justify-end'>
-          <img src='mona.svg' alt='moña' className='drop-shadow-2xl h-fit w-44 rotate-12 mona' />
+          <img src='mona.svg' alt='moña' className='drop-shadow-2xl h-fit w-22 lg:w-44 rotate-12 mona' />
         </div>
         <div className='flex flex-grow hover:animate-shake hover:animate-once hover:animate-duration-200 hover:animate-ease-in-out'>
-          <img src='mona.svg' alt='moña' className='drop-shadow-2xl h-fit w-44 -rotate-12 mona' />
+          <img src='mona.svg' alt='moña' className='drop-shadow-2xl h-fit w-22 lg:w-44 -rotate-12 mona' />
         </div>
       </picture>
 
