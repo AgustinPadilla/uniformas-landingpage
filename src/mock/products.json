@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "title": "Jardinero escolar",
+      "image": "jardinero.webp",
+      "fabric": "Zephyr",
+      "size": "2 a 6",
+      "custom": true,
+      "description": "El uniforme escolar de jardinero, fabricado en tela Zephyr, es una elección cómoda y duradera para estudiantes de jardín de infantes, ofreciendo la posibilidad de personalización con tallas que van desde el 2 hasta el 6."
+    },
+    {
+      "id": 1,
+      "title": "Tunica blanca",
+      "image": "tunica.jpg",
+      "fabric": "Acrocel",
+      "size": "6 a 14",
+      "custom": true,
+      "description": "La túnica blanca escolar, confeccionada en tela Acrocel, es una elección elegante y cómoda para estudiantes, con tallas disponibles desde la 6 hasta la 14, permitiendo un ajuste perfecto para una amplia gama de edades."
+    },
+    {
+      "id": 2,
+      "title": "Equipo deportivo liceal",
+      "image": "uniformeLiceo.jpeg",
+      "fabric": "Dry Fit",
+      "size": "8 a 16",
+      "custom": true,
+      "description": "El equipo deportivo liceal, confeccionado en tela Dry Fit, es la elección perfecta para los estudiantes del liceo que buscan comodidad y estilo. Disponible en tallas que van desde la 8 hasta la 16, este uniforme permite un ajuste óptimo para una amplia gama de edades y tallas. Además, ofrece la opción de personalización, lo que permite a los estudiantes agregar un toque único a su uniforme deportivo."
+    }
+  ]
+}
