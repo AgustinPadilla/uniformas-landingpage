@@ -4,22 +4,25 @@ import { ProductPresentationSection } from './components/ProductPresentationSect
 import { EcoFriendlySection } from './components/EcoFriendlySection'
 import { ProductsListSection } from './components/ProductsListSection'
 import { Footer } from './components/Footer'
-import { useContext, useRef } from 'react'
 import { ContactDialog } from './components/ContactDialog'
-import { ContactContext } from './context/contact'
-import { ProductContext } from './context/product'
 import { ProductDialog } from './components/ProductDialog'
+import { useContact } from './hooks/useContact'
+import { useProduct } from './hooks/useProduct'
+import { useAboutUs } from './hooks/useAboutUs'
+import { AboutUsDialog } from './components/AboutUsDialog'
+
 function App () {
-  const productList = useRef(null)
-  const { contactOpen } = useContext(ContactContext)
-  const { productOpen } = useContext(ProductContext)
+  const { contactOpen } = useContact()
+  const { productOpen } = useProduct()
+  const { aboutUsOpen } = useAboutUs()
   return (
     <div className='min-h-screen m-0 scroll-smooth'>
-      <Header productsList={productList} />
+      <Header />
       <main className='lg:snap-y lg:snap-mandatory overflow-auto md:pt-16 h-screen'>
 
         {contactOpen && <ContactDialog />}
         {productOpen.open && <ProductDialog />}
+        {aboutUsOpen && <AboutUsDialog />}
 
         <LogoSection />
 

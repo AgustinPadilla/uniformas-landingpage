@@ -1,11 +1,11 @@
-import React, { useContext } from 'react'
-import { ContactContext } from '../context/contact'
+import React from 'react'
 import { Dialog } from './Dialog'
 import { MailLink } from './MailLink'
 import { WhatsappLink } from './WhatsappLink'
+import { useContact } from '../hooks/useContact'
 
 export const ContactDialog = () => {
-  const { setContactOpen } = useContext(ContactContext)
+  const { setContactOpen } = useContact()
   const closeContact = () => {
     setContactOpen(false)
   }

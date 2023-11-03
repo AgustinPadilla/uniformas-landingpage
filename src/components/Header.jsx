@@ -1,24 +1,25 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import { Logo } from './Logo'
 import { NavItemsList } from './NavItemsList'
-import { ContactContext } from '../context/contact'
 import { NavItem } from './NavItem'
+import { useContact } from '../hooks/useContact'
+import { useAboutUs } from '../hooks/useAboutUs'
 
 export const Header = () => {
   const [openNavbar, setOpenNavbar] = useState(false)
-  const { contactOpen, setContactOpen } = useContext(ContactContext)
+  const { contactOpen, setContactOpen } = useContact()
+  const { aboutUsOpen, setAboutUsOpen } = useAboutUs()
 
   const toggleNavbar = () => {
     setOpenNavbar(!openNavbar)
   }
 
-  const mobileContact = () => {
-    toggleNavbar()
-    setContactOpen(true)
-  }
-
   const contact = () => {
     setContactOpen(!contactOpen)
+  }
+
+  const aboutUs = () => {
+    setAboutUsOpen(!aboutUsOpen)
   }
   return (
     <header className='text-xl z-50 fixed top-0 w-full bg-white h-16 shadow-md'>
@@ -27,7 +28,7 @@ export const Header = () => {
         <div className='hidden md:block'>
           <NavItemsList>
             <NavItem section='ProductListSection'>Compra ya!</NavItem>
-            <NavItem>Sobre nosotros</NavItem>
+            <NavItem onClick={aboutUs}>Sobre nosotros</NavItem>
             <NavItem onClick={contact}>Contactanos</NavItem>
             <NavItem>Dona tu ropa</NavItem>
           </NavItemsList>
@@ -42,8 +43,8 @@ export const Header = () => {
         <div className='w-full right-0 fixed bg-white flex flex-col items-center shadow-lg transition-all'>
           <NavItemsList>
             <NavItem onClick={toggleNavbar} section='ProductListSection'>Compra ya!</NavItem>
-            <NavItem onClick={toggleNavbar}>Sobre nosotros</NavItem>
-            <NavItem onClick={mobileContact}>Contactanos</NavItem>
+            <NavItem onClick={() => { toggleNavbar(); aboutUs() }}>Sobre nosotros</NavItem>
+            <NavItem onClick={() => { toggleNavbar(); contact() }}>Contactanos</NavItem>
             <NavItem onClick={toggleNavbar}>Dona tu ropa</NavItem>
           </NavItemsList>
         </div>

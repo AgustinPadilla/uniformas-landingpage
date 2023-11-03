@@ -1,12 +1,12 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Dialog } from './Dialog'
-import { ProductContext } from '../context/product'
 import { products } from '../mock/products.json'
 import { WhatsappLink } from './WhatsappLink'
 import { MailLink } from './MailLink'
+import { useProduct } from '../hooks/useProduct'
 
 export const ProductDialog = ({ Product }) => {
-  const { productOpen, closeProduct } = useContext(ProductContext)
+  const { productOpen, closeProduct } = useProduct()
 
   const product = products[productOpen.id]
   return (
